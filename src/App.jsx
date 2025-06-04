@@ -8,6 +8,7 @@ import AdminLayout from "./layouts/admin"
 import Dashboard from "./pages/admin"
 import AdminBooks from "./pages/admin/books"
 import BookCreate from "./pages/admin/books/create"
+import BookEdit from "./pages/admin/books/edit"
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
             <Route path="books">
               <Route index element={<AdminBooks />} />
               <Route path="create" element={<BookCreate />} />
+              <Route path="edit/:id" element={<BookEdit />} />
             </Route>
           
           </Route>
